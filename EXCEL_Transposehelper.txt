@@ -1,0 +1,15 @@
+Data management trick to convert FDM.csv output into something you can easily analyze:
+
+Step 1 - Open FDM.csv in Excel. Copy the entire row of output and Paste + Transpose so you end up with one column of data (instead of one row of data).
+The Excel shortcut for transposing data is Ctrl+V (paste) then T (Transpose)
+
+Step 2 - Now we have the r (cross-correlation coefficient) in every odd row, and the time lag (1, 2, 3...etc) below, in every even row. 
+In the first cell of the 2nd column (B1), enter this formula;
+
+=IF(ISEVEN(ROW(A2)),A2,"")
+
+Then double click the bottom right corner to apply all.
+
+Now we have the 'r' for each time lag in the same row.
+
+Step 3 - Delete the even rows which we no longer need. 
