@@ -36,7 +36,7 @@ fontSize = 22
 %% IMAGE SEGMENTATION % IMAGE SEGMENTATION % IMAGE SEGMENTATION %
 
 % Set directory
-cd 'C:\Users\sally.xie\Google Drive\MA\coursework\PS8527 computational methods\TOOLBOXpresent'
+cd 'C:\Users\USER\FOLDER_WITH_VIDEO_FILES'
 
 % List all video (.m4v) files in directory
 files = dir('*.m4v');
